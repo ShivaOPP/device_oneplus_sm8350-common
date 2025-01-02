@@ -89,9 +89,8 @@ PRODUCT_COPY_FILES += \
 
 # Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl-qti \
-    android.hardware.boot@1.2-impl-qti.recovery \
-    android.hardware.boot@1.2-service
+    android.hardware.boot-service.qti \
+    android.hardware.boot-service.qti.recovery
 
 # Camera
 $(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
