@@ -130,6 +130,10 @@ PRODUCT_COPY_FILES += \
 # Dolby
 $(call inherit-product, hardware/oplus/dolby/dolby.mk)
 
+# Blur
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.supports_background_blur=1
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
